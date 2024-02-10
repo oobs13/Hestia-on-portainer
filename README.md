@@ -11,8 +11,10 @@
 ## How to use this image
 
 ```bash
-wget https://raw.githubusercontent.com/jhmaverick/hestiacp-docker/main/docker-compose.yml
+wget https://raw.githubusercontent.com/oobs13/Hestia-on-portainer/main/docker-compose.yml
 HSTC_HOSTNAME="example.com" docker-compose up -d
+
+insert your domain name insted of "example.com" in the line obove
 ```
 
 A random password will be generated for the admin user and will be displayed in the container logs on first run.
