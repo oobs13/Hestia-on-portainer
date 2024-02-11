@@ -5,7 +5,7 @@ services:
   hestiacp:
     image: "jhmaverick/hestiacp:latest"
     container_name: "hestiacp-server"
-    restart: "unless-stopped"
+    restart: "always"
     hostname: "${HSTC_HOSTNAME:?Hostname not defined}"
     privileged: true
     depends_on:
@@ -53,7 +53,7 @@ services:
   mariadb:
     image: mariadb:10.6
     container_name: "hestiacp-mariadb"
-    restart: "unless-stopped"
+    restart: "always"
     environment:
       MARIADB_ROOT_PASSWORD: "root"
       MARIADB_ROOT_HOST: "%"
